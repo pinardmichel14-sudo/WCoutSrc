@@ -1,7 +1,5 @@
 ﻿//---------------------------------------------------------------------------
 
-
-#include <Vcl.Clipbrd.hpp>  //Clipboard access
 #include "WCout.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
@@ -308,10 +306,50 @@ TWCout& TWCout::AddTrailingSpaces(SPACES SPACESOperator) {
 
 void TWCout::SendToClipboard()
 {
-  if (isWCOUTDisabled) return;
+if (isWCOUTDisabled) return;
 
-	 TClipboard* clip = Clipboard();
-	 clip->AsText = get();
+    // Assuming get() returns Embarcadero UnicodeString (UTF-16)
+    UnicodeString s = get();
+    const int lenChars = s.Length();        // number of UTF-16 code units (not counting null)
+
+    if (lenChars <= 0) return;
+
+    if (!OpenClipboard(nullptr))
+        return;
+
+    // Clear current clipboard contents
+    EmptyClipboard();
+
+    // Allocate global memory for UTF-16 text including null terminator
+    const SIZE_T bytes = (static_cast<SIZE_T>(lenChars) + 1) * sizeof(wchar_t);
+    HGLOBAL hMem = GlobalAlloc(GMEM_MOVEABLE, bytes);
+    if (!hMem)
+    {
+        CloseClipboard();
+        return;
+    }
+
+    wchar_t* dst = static_cast<wchar_t*>(GlobalLock(hMem));
+    if (!dst)
+    {
+        GlobalFree(hMem);
+        CloseClipboard();
+        return;
+    }
+
+    // Copy UnicodeString data to clipboard buffer
+    // UnicodeString::c_str() returns a null-terminated UTF-16 string.
+    lstrcpyW(dst, s.c_str());
+
+    GlobalUnlock(hMem);
+
+    // Clipboard now owns hMem if SetClipboardData succeeds
+    if (!SetClipboardData(CF_UNICODETEXT, hMem))
+    {
+        GlobalFree(hMem); // only free if SetClipboardData failed
+    }
+
+	CloseClipboard();
 
 }
 
