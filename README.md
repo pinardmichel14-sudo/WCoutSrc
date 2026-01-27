@@ -1,11 +1,18 @@
 # WCout (C++, Windows)
 
-WCout is a simple, consistent output and dialog utility for C++ on Windows,
-designed for **Embarcadero C++Builder (VCL)**.
+WCout is a simple, consistent output and dialog utility for C++ on Windows.
 
-It provides a single, readable chaining syntax to format text and numbers
-and send output to message dialogs, the clipboard, memos, or strings —
+It provides a single, readable chaining syntax (`<<`) to format text and numbers
+and send output (`>>`) to the clipboard, memos, or strings —
 all using the same model.
+
+WCout uses standard Win32 APIs and should work with any Windows IDE or framework.
+It was developed and tested using Embarcadero C++Builder (see screenshots in the manual).
+
+Dialog functions are standard calls (not <<), as they accept multiple/optional parameters 
+and return a result while maintaining native Windows syntax .
+
+
 
 ---
 
@@ -41,15 +48,6 @@ Build — no external libraries or complex setup required
 
 That’s it.
 
-Platform / compiler
-
-WCout is designed for Embarcadero C++Builder (VCL, Windows).
-
-If you are using a different compiler or framework, WCout will emit a clear
-compile-time error indicating that VCL-specific headers must be replaced
-with equivalents for your environment.
-
-This makes porting explicit and intentional.
 
 Documentation
 
