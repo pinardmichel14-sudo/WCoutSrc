@@ -1,12 +1,7 @@
 ﻿//---------------------------------------------------------------------------
 
 
-#include <Vcl.Clipbrd.hpp>
-#include <Vcl.Forms.hpp>   // Application
-#include <Windows.hpp>     // MessageBoxW, IDYES, etc.
-#include <Vcl.Dialogs.hpp>
-#include <System.UITypes.hpp>
-
+#include <Vcl.Clipbrd.hpp>  //Clipboard access
 #include "WCout.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
