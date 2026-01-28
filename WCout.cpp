@@ -404,11 +404,8 @@ TWCout& TWCout::AddChar(char theChar) {
   return *this;
 }
 
-#include <System.SysUtils.hpp>   // for StringReplace
 #include <System.StrUtils.hpp>    // for ReplaceStr (sometimes preferred)
-#include <algorithm>   // for std::max (and std::clamp if available)
-#include <limits>      // sometimes helps
-
+#include <algorithm>             // for std::max (and std::clamp if available)
 
 //#define DB_PARSE_FLOAT_FORMAT
 void TWCout::FFParseFloatSpec(double dblSpec)
@@ -488,7 +485,7 @@ void TWCout::FFParseFloatSpec(double dblSpec)
     // ------------------------------------------------------------------------
     // 3. Apply sane limits
     // ------------------------------------------------------------------------
-    FloatWidth     = std::max(0, width);
+	FloatWidth     = std::max(0, width);
     FloatPrecis    = std::clamp(prec, 0, 8);   // 8 or 9 is usually plenty
     isFORMATFloatOn = (FloatWidth > 0 || FloatPrecis > 0);
 
