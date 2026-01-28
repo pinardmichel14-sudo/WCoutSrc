@@ -10,7 +10,7 @@ to the clipboard, memos, or strings.
 WCout uses standard Win32 APIs and should work with any Windows IDE or framework.
 It was developed and tested using Embarcadero C++Builder (see screenshots in the manual).
 
-Interactive dialog functions are standard Windows API calls (not <<), 
+Interactive dialog functions use standard Windows API calls (not <<), 
 accept multiple/optional parameters and return a result.
 
 
