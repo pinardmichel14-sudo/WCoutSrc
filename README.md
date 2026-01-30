@@ -2,15 +2,13 @@
 
 WCout is a simple, consistent output and dialog utility for C++ on Windows.
 
-It provides a single, readable chaining syntax where applicable (`<<`)
-to format text and numbers and send output (`>>`)
+It provides a single, readable chaining syntax where applicable (`<<`) to format text and numbers and send output (`>>`)
 to the clipboard, memos, or strings.
 
-WCout uses standard Win32 APIs and should work with any Windows IDE or framework.
+WCout uses standard Win32 APIs and should work with any Windows IDE or framework. 
 It was developed and tested using Embarcadero C++Builder (see screenshots in the manual).
 
-Dialog functions are standard calls (not `<<`), as they accept multiple/optional
-parameters and return a result while maintaining native Windows semantics.
+Dialog functions accept multiple/optional parameters and return a result, use native Windows API semantics. (vs. `<<`)
 
 ---
 ## Example
@@ -51,8 +49,9 @@ The manual shows:
 - Dialog usage
 - Clipboard and memo output
 
-## Status
+## Support
+If my tool saves you time or simplifies your work consider supporting future improvements with a coffee ☕ [My KO-FI website](https://ko-fi.com/michell777)
 
+## Status
 WCout is stable and actively documented.
-The focus is clarity, consistency, and minimal friction for everyday debugging
-and output.
+The focus is clarity, consistency, and minimal friction for everyday debugging and output.
