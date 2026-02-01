@@ -9,13 +9,13 @@ It provides a single, readable chaining syntax where applicable (`<<`) to format
 ![Example 2: Your type displayed in Info message](./images/Example2B_GIT.png)
 
 WCout uses standard Win32 APIs and should work with any Windows IDE or framework. 
-It was developed and tested using Embarcadero C++Builder (see screenshots in the manual).
+It was developed and tested using C++Builder Community Edition (see screenshots in the manual).
 
 
-Dialog functions accept multiple/optional parameters and return a result, use native Windows API semantics. (vs. `<<`)
+Dialog functions accept multiple/optional parameters and return a result, use native Windows API syntax. (vs. `<<`)
 
 ---
-## Example
+## Simple Example
 
 ```cpp
 WCout << "Pi = " << FF-7.2 << PI << SHOW;
