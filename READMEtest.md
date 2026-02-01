@@ -6,7 +6,7 @@ It provides a single, readable chaining syntax where applicable (`<<`) to format
 
 
 ![Example 1: Formatted output and clipboard copy](./images/Example1GIT.png)
-![Example 2: Your type displayed in Info message](./images/Example2Git.png)
+![Example 2: Your type displayed in Info message](./images/Example2_GIT.png)
 
 WCout uses standard Win32 APIs and should work with any Windows IDE or framework. 
 It was developed and tested using Embarcadero C++Builder (see screenshots in the manual).
