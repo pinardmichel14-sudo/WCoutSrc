@@ -5,8 +5,8 @@ WCout is a simple, consistent output and dialog utility for C++ on Windows.
 It provides a single, readable chaining syntax where applicable (`<<`) to format text and numbers and send output (`>>`) to the clipboard, memos, or strings.
 
 
-![Example1](images/Example1GIT.png)
-![Example2](images/Example2Git.png)
+![Example1](./images/Example1GIT.png)
+![Example2](./images/Example2Git.png)
 
 WCout uses standard Win32 APIs and should work with any Windows IDE or framework. 
 It was developed and tested using Embarcadero C++Builder (see screenshots in the manual).
