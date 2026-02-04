@@ -36,7 +36,7 @@ WCout << LongMessage >> CLIPBOARD;
 
 - Add `WCout.cpp` to your project
 - Include `WCout.h` where you want to use WCout
-- Build — no external libraries or complex setup required
+- Start using it — you're all set
 
 That’s it.
 ## Documentation
