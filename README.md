@@ -5,10 +5,8 @@ WCout is a simple, consistent output and dialog utility for C++ on Windows.
 It provides a single, readable chaining syntax where applicable (`<<`) to format text and numbers and send output (`>>`) to the clipboard, memos, or strings.
 
 Formatting uses a compact dash/hyphen - separated syntax like `<< FF-7.2`, `<< W-30`, `<< I-10` or `<< AUTOSPACE-ON`, making the distinction between tool commands and user data readily apparent.
-
 ![Example 1: Formatted output and clipboard copy](./images/Example1B_GIT.png)
-![Example 2: Your type displayed in Info message](./images/Example2B_GIT.png)
-(FF- = float formatting, W- = width for strings/fields, I- = integer width, AUTOSPACE-ON = prevent fields from touching)
+![Example 2: Your type displayed in Info message](./images/Example2B_GIT.png)(FF- = float formatting, W- = width for strings/fields, I- = integer width, AUTOSPACE-ON = prevent fields from touching)
 
 WCout uses standard Win32 APIs and should work with any Windows IDE or framework. 
 It was developed and tested using C++Builder Community Edition (see screenshots in the manual).
