@@ -9,7 +9,7 @@ Formatting uses a compact dash/hyphen - separated syntax like `<< FF-7.2`, `<< W
 (FF- = float formatting, W- = width for strings/fields, I- = integer width, AUTOSPACE-ON = prevent fields from touching)
 
 
-![Example 1: Formatted output and clipboard copy](./images/Example1GIT.png)
+![Example 1: Formatted output and clipboard copy](./images/Example1B_GIT.png)
 ![Example 2: Your type displayed in Info message](./images/Example2B_GIT.png)
 
 WCout uses standard Win32 APIs and should work with any Windows IDE or framework. 
