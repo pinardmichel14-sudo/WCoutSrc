@@ -54,7 +54,7 @@ The manual shows:
 - Clipboard and memo output
 
 ## Support
-If my tool saves you time or simplifies your work consider supporting future improvements with a coffee ☕ [My KO-FI website](https://ko-fi.com/michell777)
+If WCout saves you time or simplifies your work, optional support is always appreciated ☕ [My KO-FI website](https://ko-fi.com/michell777)
 
 ## Status
 WCout is stable and actively documented.
