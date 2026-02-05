@@ -16,7 +16,7 @@ WCout uses standard Win32 APIs and should work with any Windows IDE or framework
 It was developed and tested using C++Builder Community Edition (see screenshots in the manual).
 
 
-Dialog functions accept multiple/optional parameters and return a result, use native Windows API syntax. (vs. `<<`)
+Dialog functions accept multiple/optional parameters and return a result, use native Windows API syntax. (instead of `<<` syntax)
 
 ---
 ## Simple Example
@@ -41,9 +41,8 @@ WCout << LongMessage >> CLIPBOARD;
 
 - Add `WCout.cpp` to your project
 - Include `WCout.h` where you want to use WCout
-- Start using it — you're all set
+- Start using — you're all set
 
-That’s it.
 ## Documentation
 
 A full illustrated user manual is available as a PDF:
